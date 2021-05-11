@@ -1,0 +1,46 @@
+<div class="generic-container">
+  <div class="panel panel-default">
+    <div class="tablecontainer">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Customer Address</th>
+            <th>Customer Name</th>
+            <th>Invoice #</th>
+            <th>Invoice Date</th>
+            <th>Product Code</th>
+            <th>Description</th>
+            <th>Distributor Name</th>
+            <th>Distributor Address</th>
+            <th>Manufacturer Name</th>
+            <th>Manufacturer Address</th>
+            <th>Purchased Weight</th>
+            <th>Unit of Measure</th>
+            <th>Purchased Qty</th>
+            <th>Unit Price</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of reports">
+            <td><span>{{data.custAddress}}</span></td>
+            <td><span>{{data.custName}}</span></td>
+            <td><span>{{data.invoiceNum}}</span></td>
+            <td><span>{{data.invoiceDate}}</span></td>
+            <td><span>{{data.productCode}}</span></td>
+            <td><span>{{data.description}}</span></td>
+            <td><span>{{data.distName}}</span></td>
+            <td><span>{{data.distAddress}}</span></td>
+            <td><span>{{data.manufName}}</span></td>
+            <td><span>{{data.manufAddress}}</span></td>
+            <td><span>{{data.purchasedWgt}}</span></td>
+            <td><span>{{data.unitOfMeasure}}</span></td>
+            <td><span>{{data.purchasedQty}}</span></td>
+            <td><span>{{data.unitPrice}}</span></td>
+            <td><span>{{data.totalPrice}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
